@@ -1,0 +1,807 @@
+{
+	"info": {
+		"_postman_id": "fa025767-1b29-454d-b350-d04b7ea7317a",
+		"name": "EMR Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13927881"
+	},
+	"item": [
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "all_doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tawazun.space/api/doctors",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new_doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"description": "select img",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "full_name",
+									"value": "aaaj",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "124563nb",
+									"type": "text"
+								},
+								{
+									"key": "n_number",
+									"value": "0001",
+									"type": "text"
+								},
+								{
+									"key": "job_description",
+									"value": "dnbmnb",
+									"type": "text"
+								},
+								{
+									"key": "Job_ID",
+									"value": "12423",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1984-06-22",
+									"type": "text"
+								},
+								{
+									"key": "years_of_experience",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "213432",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@afsda.cof",
+									"description": "x@x.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "d",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"description": "male or female",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "sas",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "dfs",
+									"type": "text"
+								},
+								{
+									"key": "Doctor_rate",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/register/1",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"register",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doctor_by_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/1",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_doctor_by_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/123",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"123"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "a@afsda.cco",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1245678f",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/login",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "doctor_count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/count",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WorkingSchedule_print",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/1/WorkingSchedule_index",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"1",
+								"WorkingSchedule_index"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "ADD_working-schedules",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "end_time",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "start_time",
+									"value": "10:22:3",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2023-06-22",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/admin/1/schedules/1",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"admin",
+								"1",
+								"schedules",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "a@a.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/admins/login",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"admins",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new_doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"description": "select img",
+									"type": "file",
+									"src": "/home/mrx/Downloads/photos/img5.jpeg"
+								},
+								{
+									"key": "full_name",
+									"value": "aaaj",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1245678f",
+									"type": "text"
+								},
+								{
+									"key": "n_number",
+									"value": "12421",
+									"type": "text"
+								},
+								{
+									"key": "job_description",
+									"value": "dnbmnb",
+									"type": "text"
+								},
+								{
+									"key": "Job_ID",
+									"value": "12423",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1984-06-22",
+									"type": "text"
+								},
+								{
+									"key": "years_of_experience",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "213432",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a@afsda.cco",
+									"description": "x@x.com",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "d",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"description": "male or female",
+									"type": "text"
+								},
+								{
+									"key": "nationality",
+									"value": "sas",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "dfs",
+									"type": "text"
+								},
+								{
+									"key": "Doctor_rate",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/doctors/register/1",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"doctors",
+								"register",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "new_patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "27|55HfzwZBzuAQCEx6Q44Oh164h4XCeQsjkIroaFYI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "full_name",
+									"value": "asdafdfsd",
+									"type": "text"
+								},
+								{
+									"key": "date_of_birth",
+									"value": "1984-06-22",
+									"type": "text"
+								},
+								{
+									"key": "n_number",
+									"value": "1333",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "1234564",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "a.a@3a.coa",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "faknlfk",
+									"type": "text"
+								},
+								{
+									"key": "height",
+									"value": "180",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "blood_type",
+									"value": "O-",
+									"type": "text"
+								},
+								{
+									"key": "disease_name",
+									"value": "bla",
+									"type": "text"
+								},
+								{
+									"key": "description_disease",
+									"value": "blabla",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "file_no",
+									"value": "12233",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/patients/register/1",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"patients",
+								"register",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "a.a@a.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/patients/login",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"patients",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patients_count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "30|hSr2XFkQzXLVGVt8GOegGz68Hx6PNmG4jjPzata9",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://tawazun.space/api/patients/count",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"patients",
+								"count"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "all_appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "30|hSr2XFkQzXLVGVt8GOegGz68Hx6PNmG4jjPzata9",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tawazun.space/api/appointments",
+							"protocol": "http",
+							"host": [
+								"tawazun",
+								"space"
+							],
+							"path": [
+								"api",
+								"appointments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
